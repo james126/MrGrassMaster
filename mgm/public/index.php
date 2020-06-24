@@ -1,7 +1,7 @@
 <?php require_once('../private/initialize.php'); ?>
 
 <?php $header_variables = array(null, "fixed-top", "nav-item active", "nav-item", "nav-item", "nav-item"); ?>
-<?php include(SHARED_PATH . '/header.php'); ?>
+<?php include('../private/shared/header.php'); ?>
 
 <!-- Current page content -->
 <body>
