@@ -1,4 +1,4 @@
-# Mr-Grass-Master
+# MrGrassMaster
 
 <b>index.php</b>
 * automatic/manual carousel
