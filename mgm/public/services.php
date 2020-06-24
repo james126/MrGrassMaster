@@ -1,7 +1,8 @@
-<?php require_once('../private/initialize.php'); ?>
-
-<?php $header_variables = array("<body class='d-flex flex-column h-100'>", "sticky-top", "nav-item", "nav-item active", "nav-item", "nav-item"); ?>
-<?php include(SHARED_PATH . '/header.php'); ?>
+<?php 
+    require_once('../private/initialize.php');
+    $header_variables = array("<body class='d-flex flex-column h-100'>", "sticky-top", "nav-item", "nav-item active", "nav-item", "nav-item");
+    include('../private/shared/header.php');
+?>
 
 <!-- Page content -->
 <!-- outer jumbotron -->
@@ -67,4 +68,4 @@
     </div>
 </div>
 
-<?php include(SHARED_PATH . '/footer.php'); ?>
+<?php include('../private/shared/header.php');?>

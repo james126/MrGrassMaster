@@ -1,14 +1,15 @@
-<?php require_once('../private/initialize.php'); ?>
-
-<?php $header_variables = array("<body class='d-flex flex-column h-100'>", "sticky-top", "nav-item", "nav-item", "nav-item active", "nav-item"); ?>
-<?php include(SHARED_PATH . '/header.php'); ?>
+<?php 
+    require_once('../private/initialize.php'); 
+    $header_variables = array("<body class='d-flex flex-column h-100'>", "sticky-top", "nav-item", "nav-item", "nav-item active", "nav-item"); 
+    include('../private/shared/header.php');
+?>
 
 <!-- Page content -->
 <!-- outer jumbotron -->
 <div class="container d-inline-flex flex-column">
     <div class="jumbotron about-outer-jumbotron"  id="outer-jumbotron">
         <div class="container">
-            <h1 class="text-center" id="main-title">About Mr Grass Master </h1>
+            <h1 class="text-center" id="main-title">About Mr Grass Master </h1>            
             <p class="text-center lead">Delivering high quality services at a competitive price</p>
             <hr class="my-4">
             <img src="images/guarantee.png" id="guarantee-image" alt="customer guarantee">
@@ -33,4 +34,5 @@
     </div>
 </div>
 
-<?php include(SHARED_PATH . '/footer.php'); ?>
+<?php include('../private/shared/footer.php');?>
+

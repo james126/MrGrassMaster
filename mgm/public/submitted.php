@@ -1,8 +1,8 @@
-<?php require_once('../private/initialize.php'); ?>
-
-<?php $header_variables = array("<body class='d-flex flex-column h-100'>", "sticky-top", "nav-item", "nav-item", "nav-item", "nav-item active"); ?>
-
-<?php include(SHARED_PATH . '/header.php'); ?>
+<?php 
+    require_once('../private/initialize.php');
+    $header_variables = array("<body class='d-flex flex-column h-100'>", "sticky-top", "nav-item", "nav-item", "nav-item", "nav-item active");
+    include('../private/shared/header.php');
+?>
 
 <?php
     //ensures that user can't directly go to details.php without submitting form on contact.php
@@ -36,7 +36,7 @@
         $email_submitted = mail($to, $subject, $email_message);
         restore_error_handler();
     } else {
-        redirect_to(url_for('public/contact.php')); //prevents user from loading page without being redirected from contact.php
+        redirect_to('contact.php'); //prevents user from loading page without being redirected from contact.php
     }
 ?>
 
@@ -112,4 +112,4 @@
     </div>
 </div>
 
-<?php include(SHARED_PATH . '/footer.php'); ?>
+<?php include('../private/shared/header.php');?>

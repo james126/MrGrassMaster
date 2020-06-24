@@ -1,7 +1,8 @@
-<?php require_once('../private/initialize.php'); ?>
-
-<?php $header_variables = array("<body class='d-flex flex-column h-100'>", "sticky-top", "nav-item", "nav-item", "nav-item", "nav-item active"); ?>
-<?php include(SHARED_PATH . '/header.php'); ?>
+<?php 
+    require_once('../private/initialize.php');
+    $header_variables = array("<body class='d-flex flex-column h-100'>", "sticky-top", "nav-item", "nav-item", "nav-item", "nav-item active");
+    include('../private/shared/header.php');
+?>
 
 <!-- Page content -->
 <!-- outer jumbotron -->
@@ -15,7 +16,7 @@
             <!-- 'novalidate' disables browser validate check (bootstrap to validate)
                   action = where form data is submitted
                   method = post data to web server -->
-            <form action="<?php echo url_for('public/submitted.php'); ?>" method="post" class="needs-validation" novalidate>
+            <form action="" method="post" class="needs-validation" novalidate>
                 <div class="form-group">
                     <div class="row">
                         <div class="col-lg-6">
@@ -84,4 +85,4 @@
     </div>
 </div>
 
-<?php include(SHARED_PATH . '/footer.php'); ?>
+<?php include('../private/shared/header.php');?>
