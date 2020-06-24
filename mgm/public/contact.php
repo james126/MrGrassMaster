@@ -50,7 +50,7 @@
                             <label>Address</label>
                             <input type="text" class="form-control" name="address_line1" value="" maxlength="60" required>
                             <small class="form-text text-muted">number and street</small>
-                            <div class="invalid-feedback">please enter name and street</div>
+                            <div class="invalid-feedback">please enter number and street</div>
                         </div>
                     </div>
                 </div>
@@ -59,7 +59,7 @@
                         <div class="col-lg-6">
                             <input type="text" class="form-control" name="address_line2" value="" maxlength="30" required>
                             <small class="form-text text-muted">suburb</small>
-                            <div class="invalid-feedback">please enter suburb</div>
+                            <div class="invalid-feedback">please enter</div>
                         </div>
                         <div class="col-lg-6">
                             <input type="text" class="form-control" placeholder="Auckland" disabled>
