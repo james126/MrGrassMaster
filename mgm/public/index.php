@@ -20,18 +20,13 @@ $connnection = pg_connect("host=ec2-34-197-141-7.compute-1.amazonaws.com
 if ($connection){
     echo "connection successful\n";
 } else {
-    echo "connection unsuccessful\n";
+    echo pg_last_error($connection);
 }
 
 $query = "INSERT INTO messages (first_name, last_name, email, phone, address_line1, address_line2, message) "
             . "VALUES ('{$first_name}', '{$last_name}', '{$email}', '{$phone}', '{$address_line1}', '{$address_line2}', '{$message}');";
 $result = pg_query($connection, $query);
 
-if ($result){
-    echo "result successful\n";
-} else {
-    echo "result unsuccessful\n";
-}
 
 
 
