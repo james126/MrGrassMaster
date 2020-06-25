@@ -16,7 +16,7 @@
             <!-- 'novalidate' disables browser validate check (bootstrap to validate)
                   action = where form data is submitted
                   method = post data to web server -->
-            <form action="" method="post" class="needs-validation" novalidate>
+            <form action="submitted.php" method="post" class="needs-validation" novalidate>
                 <div class="form-group">
                     <div class="row">
                         <div class="col-lg-6">
