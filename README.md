@@ -1,7 +1,7 @@
 # MrGrassMaster
 
 <b>index.php</b>
-* automatic/manual carousel
+automatic/manual carousel
 
 <img src="https://github.com/james126/Mr-Grass-Master/blob/master/screenshots/index1.jpg" width="60%" height="60%">
 <img src="https://github.com/james126/Mr-Grass-Master/blob/master/screenshots/index2.jpg" width="60%" height="60%">
