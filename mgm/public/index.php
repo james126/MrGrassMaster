@@ -14,11 +14,11 @@ $message = 'lawn mowing';
 $connnection = pg_connect("host=ec2-34-197-141-7.compute-1.amazonaws.com dbname=dduft7k2jshmsq port=5432 user=mqoerrbfbszdsl password=792c74a4c6579cd51fab1c144328cd879717b8581707f957b33c0f9035c7c590 sslmode=require");
 
 echo "host=ec2-34-197-141-7.compute-1.amazonaws.com dbname=dduft7k2jshmsq port=5432 user=mqoerrbfbszdsl password=792c74a4c6579cd51fab1c144328cd879717b8581707f957b33c0f9035c7c590 sslmode=require";
-                            
+
 if ($connection){
-    echo "connection successful\n";
+    //echo "connection successful\n";
 } else {
-    echo pg_last_error($connection);
+    //echo pg_last_error($connection);
 }
 
 $query = "INSERT INTO messages (first_name, last_name, email, phone, address_line1, address_line2, message) "
