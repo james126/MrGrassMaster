@@ -12,10 +12,21 @@ $address_line2 = 'auckland';
 $message = 'lawn mowing';
 
 $connnection = pg_connect(getenv("DATABASE_URL"));
+if ($connection){
+    echo "connection successful\n";
+} else {
+    echo "connection unsuccessful\n";
+}
+
 $query = "INSERT INTO messages (first_name, last_name, email, phone, address_line1, address_line2, message) "
             . "VALUES ('{$first_name}', '{$last_name}', '{$email}', '{$phone}', '{$address_line1}', '{$address_line2}', '{$message}');";
 $result = pg_query($connection, $query);
 
+if ($result){
+    echo "result successful\n";
+} else {
+    echo "result unsuccessful\n";
+}
 
 
 
