@@ -1,0 +1,6 @@
+TRUSTIFI_KEY=fca0f137011d6ec201ee63ec0f494310c664f2cdcec6e81f
+.env=
+TRUSTIFI_SECRET=a2e9724da357b0661e675da068b92529
+.env=
+TRUSTIFI_URL='https://be.trustifi.com'
+.env=

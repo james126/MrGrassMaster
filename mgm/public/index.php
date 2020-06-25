@@ -1,48 +1,36 @@
-<?php 
-    require_once('../private/initialize.php');
-    $header_variables = array(null, "fixed-top", "nav-item active", "nav-item", "nav-item", "nav-item");
-    include('../private/shared/header.php');
-?>
-
-<!-- Current page content -->
+<!DOCTYPE html>
+<html>
 <body>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-            <!-- Slide One -->
-            <div class="carousel-item active" id="first-image">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3>Mr Grass Master</h3>
-                    <p>East Auckland garden maintenance specialists</p>
-                </div>
-            </div>
-            <!-- Slide Two -->
-            <div class="carousel-item" id="second-image">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3>We're here to help</h3>
-                    <p>get your outdoor areas looking great</p>
-                </div>
-            </div>
-            <!-- Slide Three -->
-            <div class="carousel-item" id="third-image">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3>Giving you more time</h3>
-                    <p>to enjoy doing what you love most</p>
-                </div>
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
 
-    <?php include('../private/shared/header.php');?>
+<?php
+$curl = curl_init();
+
+    curl_setopt_array($curl, array(
+      CURLOPT_URL => "https://be.trustifi.com/api/i/v1/email",
+      CURLOPT_RETURNTRANSFER => true,
+      CURLOPT_ENCODING => "",
+      CURLOPT_MAXREDIRS => 10,
+      CURLOPT_TIMEOUT => 0,
+      CURLOPT_FOLLOWLOCATION => true,
+      CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+      CURLOPT_CUSTOMREQUEST => "POST",
+      CURLOPT_POSTFIELDS =>"{\n  \"recipients\": [{\"email\": \"mrjameseason@gmail.com\", \"name\": \"James Eason\",
+          \"phone\":{\"country_code\":\"+64\",\"phone_number\":\"0211397315\"}}],\n  \"lists\": [],
+          \n  \"contacts\": [],\n  \"attachments\": [],\n  \"title\": \"Title\",\n  \"html\": \"Body\",
+          \n  \"methods\": { \n    \"postmark\": false,\n    \"secureSend\": false,\n    \"encryptContent\": false,
+          \n    \"secureReply\": false \n  }\n}",
+      CURLOPT_HTTPHEADER => array(
+        "x-trustifi-key: {{fca0f137011d6ec201ee63ec0f494310c664f2cdcec6e81f}}",
+        "x-trustifi-secret: {{a2e9724da357b0661e675da068b92529}}",
+        "Content-Type: application/json"
+      ),
+    ));
+
+    $response = curl_exec($curl);
+
+    curl_close($curl);
+    echo $response;
+ ?>
+
+</body>
+</html>
