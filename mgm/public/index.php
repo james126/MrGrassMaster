@@ -13,7 +13,8 @@ $address_line2 = 'auckland';
 $message = 'lawn mowing';
 
 
-$connection = pg_connect("host=ec2-34-197-141-7.compute-1.amazonaws.com port=5432 dbname=dduft7k2jshmsq user=mqoerrbfbszdsl password=792c74a4c6579cd51fab1c144328cd879717b8581707f957b33c0f9035c7c590 sslmode=require");
+//$connection = pg_connect("host=ec2-34-197-141-7.compute-1.amazonaws.com port=5432 dbname=dduft7k2jshmsq user=mqoerrbfbszdsl password=792c74a4c6579cd51fab1c144328cd879717b8581707f957b33c0f9035c7c590 sslmode=require");
+$connection = pg_connect(getenv("DATABASE_URL"));
 
 //echo "host=ec2-34-197-141-7.compute-1.amazonaws.com dbname=dduft7k2jshmsq port=5432 user=mqoerrbfbszdsl password=792c74a4c6579cd51fab1c144328cd879717b8581707f957b33c0f9035c7c590 sslmode=require";
 
