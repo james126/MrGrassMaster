@@ -25,13 +25,14 @@ if ($connection){
 }
 
 
-/*$query = "SELECT * FROM messages";
+$query = "SELECT * FROM messages";
 $result = pg_query($connection, $query);
 
 while ($row = pg_fetch_assoc($result)) {
     echo $row['first_name'];
 }
 
+/*
 $query = "INSERT INTO messages (first_name, last_name, email, phone, address_line1, address_line2, message) "
             . "VALUES ('{$first_name}', '{$last_name}', '{$email}', '{$phone}', '{$address_line1}', '{$address_line2}', '{$message}');";
 $result = pg_query($connection, $query);
