@@ -1,50 +1,48 @@
-<!DOCTYPE html>
-<html>
+<?php 
+    require_once('../private/initialize.php');
+    $header_variables = array(null, "fixed-top", "nav-item active", "nav-item", "nav-item", "nav-item");
+    include('../private/shared/header.php');
+?>
+
+<!-- Current page content -->
 <body>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <!-- Slide One -->
+            <div class="carousel-item active" id="first-image">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Mr Grass Master</h3>
+                    <p>East Auckland garden maintenance specialists</p>
+                </div>
+            </div>
+            <!-- Slide Two -->
+            <div class="carousel-item" id="second-image">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>We're here to help</h3>
+                    <p>get your outdoor areas looking great</p>
+                </div>
+            </div>
+            <!-- Slide Three -->
+            <div class="carousel-item" id="third-image">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Giving you more time</h3>
+                    <p>to enjoy doing what you love most</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
 
-<?php
-
-$first_name = 'billy';
-$last_name = 'brown';
-$email = 'billybrown@gmail.com';
-$phone = '123456';
-$address_line1 = '19 pinero place' ;
-$address_line2 = 'auckland';
-$message = 'lawn mowing';
-
-
-//$connection = pg_connect("host=ec2-34-197-141-7.compute-1.amazonaws.com port=5432 dbname=dduft7k2jshmsq user=mqoerrbfbszdsl password=792c74a4c6579cd51fab1c144328cd879717b8581707f957b33c0f9035c7c590 sslmode=require");
-$connection = pg_connect(getenv("DATABASE_URL"));
-
-//echo "host=ec2-34-197-141-7.compute-1.amazonaws.com dbname=dduft7k2jshmsq port=5432 user=mqoerrbfbszdsl password=792c74a4c6579cd51fab1c144328cd879717b8581707f957b33c0f9035c7c590 sslmode=require";
-
-
-if ($connection){
-    echo "connection successful\n";
-} else {
-    echo pg_last_error($connection);
-}
-
-
-$query = "SELECT * FROM messages";
-$result = pg_query($connection, $query);
-
-while ($row = pg_fetch_assoc($result)) {
-    echo $row['first_name'];
-}
-
-
-$query = "INSERT INTO messages (first_name, last_name, email, phone, address_line1, address_line2, message) "
-            . "VALUES ('{$first_name}', '{$last_name}', '{$email}', '{$phone}', '{$address_line1}', '{$address_line2}', '{$message}');";
-$result = pg_query($connection, $query);
-
-if ($result){
-    echo "query successful";
-}
-
-
-
- ?>
-
-</body>
-</html>
+    <?php include('../private/shared/header.php');?>
