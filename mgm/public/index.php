@@ -20,9 +20,9 @@ $curl = curl_init();
           \n  \"methods\": { \n    \"postmark\": false,\n    \"secureSend\": false,\n    \"encryptContent\": false,
           \n    \"secureReply\": false \n  }\n}",
       CURLOPT_HTTPHEADER => array(
-        "x-trustifi-key: {{fca0f137011d6ec201ee63ec0f494310c664f2cdcec6e81f}}",
-        "x-trustifi-secret: {{a2e9724da357b0661e675da068b92529}}",
-        "Content-Type: application/json"
+          'x-trustifi-key' => '{{fca0f137011d6ec201ee63ec0f494310c664f2cdcec6e81f}}',
+            'x-trustifi-secret' => '{{a2e9724da357b0661e675da068b92529}}',
+            'Content-Type' => 'application/json'
       ),
     ));
 
