@@ -13,12 +13,10 @@ $message = 'lawn mowing';
 
 $connnection = @pg_connect(getenv("DATABASE_URL"));
 $query = "INSERT INTO messages (first_name, last_name, email, phone, address_line1, address_line2, message) "
-            . "VALUES ({$first_name}, {$last_name}, {$email}, {$phone}, {$address_line1}, {$address_line2}, {$message});";
+            . "VALUES ('{$first_name}', '{$last_name}', '{$email}', '{$phone}', '{$address_line1}', '{$address_line2}', '{$message}');";
 $result = @pg_query($connection, $query);
 
-if ($result){
-    echo 'successful';
-}
+
 
 
  ?>
