@@ -42,7 +42,7 @@ final class DatabaseTests extends TestCase {
             WHERE first_name = 'Joe' AND last_name = 'Bloggs' AND email = 'joebloggs@gmail.com';";
 
         $result =  pg_query($query);
-        $rows = num_rows($result);
+        $rows = pg_num_rows($result);
         $this->assertEquals(1, $rows);
     }
 
