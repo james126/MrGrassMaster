@@ -6,4 +6,4 @@ php:
  - 7.4
 
 script:
-  - phpunit tests
+  - phpunit tests/Tests.php
