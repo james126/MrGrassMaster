@@ -20,9 +20,6 @@ final class DatabaseTests extends TestCase {
 
     //Test INSERT INTO database
     public function testInsertInto(): void {
-        $query1 = "DELETE FROM messages WHERE first_name = 'Joe' AND last_name = 'Bloggs' AND email = 'joebloggs@gmail.com';";
-        $result1 = pg_query($query1);
-
         $first_name = 'Joe';
         $last_name = 'Bloggs';
         $email = 'joebloggs@gmail.com';
@@ -46,7 +43,7 @@ final class DatabaseTests extends TestCase {
 
         $result =  pg_query($query);
         $rows = pg_num_rows($result);
-        $this->assertEquals(1, $rows);
+        $this->assertGreaterThan($rows, 0);
     }
 
     //Test DELETE FROM database
@@ -55,6 +52,5 @@ final class DatabaseTests extends TestCase {
         $result = pg_query($query);
         $this->assertNotFalse($result);
     }
-
 }
 ?>
