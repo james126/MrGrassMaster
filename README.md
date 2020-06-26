@@ -34,6 +34,6 @@ validates user input
 ---
 <b>submitted.php</b><br>
 inserts form data into PostgreSQL database<br>
-displays form data
+displays submitted data
 
 <img src="https://github.com/james126/Mr-Grass-Master/blob/master/screenshots/s.png" width="60%" height="60%">
