@@ -1,8 +1,8 @@
 # MrGrassMaster
 
-<b>Integration Testing<b><br>
+<b>Integration Testing</b><br>
 Job Log<br>
-<img src="https://github.com/james126/MrGrassMaster/blob/master/screenshots/testlog.JPG" width="100%" height="100%">
+<img src="https://github.com/james126/MrGrassMaster/blob/master/screenshots/testlog.JPG" width="50%" height="50%">
 
 <b>Deployment</b><br>
 https://mrgrassmaster.herokuapp.com/index.php
