@@ -43,7 +43,7 @@ final class DatabaseTests extends TestCase {
 
         $result =  pg_query($query);
         $rows = pg_num_rows($result);
-        $this->assertGreaterThan($rows, 0);
+        $this->assertGreaterThan(0, $rows);
     }
 
     //Test DELETE FROM database
