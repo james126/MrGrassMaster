@@ -4,6 +4,7 @@ use PHPUnit\Framework\TestCase;
 
 final class DatabaseTests extends TestCase {
 
+    //Test database connection
     public function testConnection(): void {
         $connection = pg_connect(
             "dbname=dduft7k2jshmsq
@@ -14,11 +15,10 @@ final class DatabaseTests extends TestCase {
             sslmode=require");
 
         $status = pg_connection_status($connection) ;
-
-
         $this->assertEquals($status, PGSQL_CONNECTION_OK);
     }
 
+    //Test INSERT INTO database
     public function testInsertInto(): void {
         $first_name = 'Joe';
         $last_name = 'Bloggs';
@@ -33,7 +33,17 @@ final class DatabaseTests extends TestCase {
         $result = pg_query($query);
 
         $this->assertNotFalse($result);
+    }
 
+    //Test SELECT * FROM database
+    public function testSelectFrom(): void {
+        $query = "SELECT *
+            FROM messages
+            WHERE first_name = 'Joe' AND last_name = 'Bloggs' AND email = 'joebloggs@gmail.com';"
+
+        $result =  pg_query($query);
+        $rows = num_rows($result);
+        $this->assertEquals(1, $rows);
     }
 
 }
