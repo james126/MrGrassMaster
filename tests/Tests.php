@@ -5,7 +5,7 @@ use PHPUnit\Framework\TestCase;
 final class DatabaseTests extends TestCase {
 
     public function testConnection(): void {
-        $this->$connection = pg_connect(
+        $connection = pg_connect(
             "dbname=dduft7k2jshmsq
             host=ec2-34-197-141-7.compute-1.amazonaws.com
             port=5432
@@ -30,9 +30,9 @@ final class DatabaseTests extends TestCase {
 
         $query = "INSERT INTO messages (first_name, last_name, email, phone, address_line1, address_line2, message) "
             . "VALUES ('{$first_name}', '{$last_name}', '{$email}', '{$phone}', '{$address_line1}', '{$address_line2}', '{$message}');";
-        $result = pg_query($this->$connection, $query);
+        $result = pg_query($query);
 
-        $this->assertNotFalse($connection);
+        $this->assertNotFalse($result);
 
     }
 
