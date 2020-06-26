@@ -39,12 +39,14 @@ final class DatabaseTests extends TestCase {
     public function testSelectFrom(): void {
         $query = "SELECT *
             FROM messages
-            WHERE first_name = 'Joe' AND last_name = 'Bloggs' AND email = 'joebloggs@gmail.com';"
+            WHERE first_name = 'Joe' AND last_name = 'Bloggs' AND email = 'joebloggs@gmail.com';";
 
         $result =  pg_query($query);
         $rows = num_rows($result);
         $this->assertEquals(1, $rows);
     }
+
+    //Test
 
 }
 ?>
