@@ -1,7 +1,7 @@
 # MrGrassMaster
 
 <b>Continuous Integration Testing</b><br>
-Job Log example<br>
+TravisCI Job Log example <br>
 <img src="https://github.com/james126/MrGrassMaster/blob/master/screenshots/testlog.JPG" width="60%" height="60%">
 
 <b>Continuous Deployment</b><br>
