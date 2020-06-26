@@ -2,7 +2,7 @@
 
 <b>Integration Testing<b><br>
 Job Log<br>
-<img src="https://github.com/james126/Mr-Grass-Master/blob/master/screenshots/testlog.jpg" width="100%" height="100%">
+<img src="https://github.com/james126/MrGrassMaster/blob/master/screenshots/testlog.JPG" width="100%" height="100%">
 
 <b>Deployment</b><br>
 https://mrgrassmaster.herokuapp.com/index.php
