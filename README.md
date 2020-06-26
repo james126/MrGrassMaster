@@ -1,8 +1,8 @@
 # MrGrassMaster
 
-<b>Continuous Testing</b><br>
-Job Log<br>
-<img src="https://github.com/james126/MrGrassMaster/blob/master/screenshots/testlog.JPG" width="50%" height="50%">
+<b>Continuous Integration Testing</b><br>
+Job Log example<br>
+<img src="https://github.com/james126/MrGrassMaster/blob/master/screenshots/testlog.JPG" width="60%" height="60%">
 
 <b>Continuous Deployment</b><br>
 https://mrgrassmaster.herokuapp.com/index.php
