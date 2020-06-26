@@ -15,7 +15,7 @@
             <img src="images/guarantee.png" id="guarantee-image" alt="customer guarantee">
             <p class="text-justify">
                 We service all suburbs in and around south east Auckland. We're so confident you'll be happy with our services that all work done comes with a
-                1000% customer satisfaction guarantee. For regular services if you have a current price we can probably beat it!<br>
+                100% customer satisfaction guarantee. For regular services if you have a current price we can probably beat it!<br>
             </p>
         </div>
 
