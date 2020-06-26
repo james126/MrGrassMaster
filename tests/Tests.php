@@ -17,11 +17,21 @@ final class DatabaseTests extends TestCase {
         $this->assertTrue($connection);
     }
 
-    /*public function testInsertInto(): void {
+    public function testInsertInto(): void {
+        $first_name = 'Joe';
+        $last_name = 'Bloggs';
+        $email = 'joebloggs@gmail.com';
+        $phone = '123456';
+        $address_line1 = '10 Beach Road';
+        $address_line2 = 'Takapuna';
+        $message = 'lawn mowing needed';
+
         $query = "INSERT INTO messages (first_name, last_name, email, phone, address_line1, address_line2, message) "
-                    . "VALUES ('{$first_name}', '{$last_name}', '{$email}', '{$phone}', '{$address_line1}', '{$address_line2}', '{$message}');";
+            . "VALUES ('{$first_name}', '{$last_name}', '{$email}', '{$phone}', '{$address_line1}', '{$address_line2}', '{$message}');";
         $result = pg_query($connection, $query);
-    }*/
+
+        $this->assertTrue($connection);
+    }
 
 }
 ?>
