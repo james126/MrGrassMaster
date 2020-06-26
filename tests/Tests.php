@@ -31,6 +31,7 @@ final class DatabaseTests extends TestCase {
         $result = pg_query($connection, $query);
 
         $this->assertTrue($connection);
+        
     }
 
 }
