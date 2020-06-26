@@ -1,10 +1,10 @@
 # MrGrassMaster
 
-<b>Integration Testing</b><br>
+<b>Continuous Testing</b><br>
 Job Log<br>
 <img src="https://github.com/james126/MrGrassMaster/blob/master/screenshots/testlog.JPG" width="50%" height="50%">
 
-<b>Deployment</b><br>
+<b>Continuous Deployment</b><br>
 https://mrgrassmaster.herokuapp.com/index.php
 
 <b>index.php</b><br>
