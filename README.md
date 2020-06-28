@@ -1,10 +1,10 @@
 # MrGrassMaster
 
-<b>Continuous Integration Testing</b><br>
+<b>Automated Testing</b><br>
 TravisCI job log example <br>
 <img src="https://github.com/james126/MrGrassMaster/blob/master/screenshots/testlog.JPG" width="60%" height="60%">
 
-<b>Continuous Deployment</b><br>
+<b>Automated Deployment</b><br>
 https://mrgrassmaster.herokuapp.com/index.php
 
 ---
