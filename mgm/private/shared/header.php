@@ -12,6 +12,7 @@
     <script src="js/popper.js" defer></script>
     <script src="js/bootstrap.js" defer></script>
     <script src="js/javascript.js" defer></script>
+    <meta name="google-site-verification" content="Leh3mf1p9oGyri-QqbwoAtl7uHgiRxzBbHtyHekEdws" />
 </head>
 <?php echo $header_variables[0]; ?> <!-- includes body tag for all pages except index.html -->
 
