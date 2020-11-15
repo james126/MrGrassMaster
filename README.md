@@ -3,10 +3,6 @@
 <b>Deployment</b><br>
 https://mrgrassmaster.herokuapp.com/index.php
 
-<b>Testing</b><br>
-TravisCI job log example <br>
-<img src="https://github.com/james126/MrGrassMaster/blob/master/screenshots/testlog.JPG" width="60%" height="60%">
-
 ---
 <b>index.php</b><br>
 automatic/manual carousel
@@ -37,3 +33,10 @@ inserts form data into PostgreSQL database<br>
 displays submitted data
 
 <img src="https://github.com/james126/Mr-Grass-Master/blob/master/screenshots/s.png" width="60%" height="60%">
+
+---
+
+<b>Testing</b><br>
+TravisCI job log example <br>
+<img src="https://github.com/james126/MrGrassMaster/blob/master/screenshots/testlog.JPG" width="60%" height="60%">
+
