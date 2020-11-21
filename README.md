@@ -16,18 +16,18 @@ automatic/manual carousel
 <img src="https://github.com/james126/Mr-Grass-Master/blob/master/screenshots/services.jpg" width="60%" height="60%">  
 
 ---  
-*<b>about.php</b>
+* <b>about.php</b>
 
 <img src="https://github.com/james126/Mr-Grass-Master/blob/master/screenshots/about.png" width="60%" height="60%">  
 
 ---   
-*<b>contact.php</b><br>
+* <b>contact.php</b><br>
 validates user input
 
 <img src="https://github.com/james126/Mr-Grass-Master/blob/master/screenshots/contact.png" width="60%" height="60%">  
 
 ---
-*<b>submitted.php</b><br>
+* <b>submitted.php</b><br>
 inserts form data into PostgreSQL database<br>
 displays submitted data
 
@@ -35,7 +35,7 @@ displays submitted data
 
 ---
 
-*<b>Testing</b><br>
+* <b>Testing</b><br>
 TravisCI job log example <br>
 <img src="https://github.com/james126/MrGrassMaster/blob/master/screenshots/testlog.JPG" width="60%" height="60%">
 
