@@ -3,7 +3,7 @@
 <b>Deployment</b><br> https://mrgrassmaster.herokuapp.com/index.php
 
 ---
-*<b>index.php</b><br>
+* <b>index.php</b><br>
 automatic/manual carousel
 
 <img src="https://github.com/james126/Mr-Grass-Master/blob/master/screenshots/index1.jpg" width="60%" height="60%">
@@ -11,7 +11,7 @@ automatic/manual carousel
 <img src="https://github.com/james126/Mr-Grass-Master/blob/master/screenshots/index3.jpg" width="60%" height="60%">
 
 ---
-*<b>services.php</b>
+* <b>services.php</b>
 
 <img src="https://github.com/james126/Mr-Grass-Master/blob/master/screenshots/services.jpg" width="60%" height="60%">  
 
