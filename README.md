@@ -1,6 +1,6 @@
 # MrGrassMaster
 
-<b>Deployment</b><br> https://mrgrassmaster.herokuapp.com/index.php
+<b>Deployment</b> https://mrgrassmaster.herokuapp.com/index.php
 
 ---
 * <b>index.php</b><br>
