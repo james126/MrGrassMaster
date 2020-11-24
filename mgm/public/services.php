@@ -25,7 +25,7 @@
                         <h5 class="card-header  text-center">Hedge Trimming</h5>
                         <img src="images/hedge.jpg" class="card-img-top" alt="trimmed hedges">
                         <div class="card-body">
-                            <p class="card-text">A well maintained hedge has a full and neat appearance.  We offer a range of hedge trimming services to keep you hedges looking smart.</p>
+                            <p class="card-text">A well maintained hedge has a full and neat appearance.  We offer a range of hedge trimming services to keep your hedges looking smart.</p>
                         </div>
                     </div>
                     <div class="card mt-4 ml-4 mr-4">
