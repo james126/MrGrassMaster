@@ -1,7 +1,7 @@
 # MrGrassMaster
----
-https://mrgrassmaster.herokuapp.com/index.php <br>
-N.B. currently not mobile responsive
+
+### https://mrgrassmaster.herokuapp.com/index.php <br>
+#### N.B. currently not mobile responsive
 ---
 * <b>index.php</b><br>
 automatic/manual carousel
