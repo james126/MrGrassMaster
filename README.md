@@ -4,7 +4,7 @@
 #### N.B. currently not mobile/tablet responsive
 ---
 * <b>index.php</b><br>
-automatic/manual carousel
+carousel
 
 <img src="https://github.com/james126/Mr-Grass-Master/blob/master/screenshots/index1.jpg" width="60%" height="60%">
 <img src="https://github.com/james126/Mr-Grass-Master/blob/master/screenshots/index2.jpg" width="60%" height="60%">
