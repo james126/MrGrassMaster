@@ -17,7 +17,7 @@
 <?php echo $header_variables[0]; ?> <!-- includes body tag for all pages except index.html -->
 
 <!-- Navbar fixed collapsable -->
-<header>
+<header class="dashed-border-orange">
     <nav class="navbar <?php echo $header_variables[1]; ?> navbar-expand-md navbar-dark fixed-top bg-dark">
         <span class="navbar-brand">
             <img src="images/man.png" width="35" class="d-inline-block align-top" alt="">
