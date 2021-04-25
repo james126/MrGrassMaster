@@ -33,5 +33,10 @@
         </div>
     </div>
 </div>
-
-<?php include('../private/shared/footer.php');?>
+<nav class="navbar navbar-expand-sm navbar-light bg-light custom_footer>
+        <span class="navbar-text" id="footer-text">
+            &copy; Copyright 2021 KWD. All rights reserved.
+        </span>
+    </nav>
+</body>
+</html>
