@@ -189,3 +189,7 @@ carousel */
 .card{
     background: rgba(233, 236, 239, .5);
 }
+.custom_footer{
+    position: absolute;
+    bottom: 0;	
+}
