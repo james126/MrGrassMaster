@@ -1,12 +1,12 @@
 <?php
     require_once('../private/initialize.php');
-    $header_variables = array("<body class='d-flex flex-column h-100'>", "sticky-top", "nav-item", "nav-item", "nav-item active", "nav-item");
+    $header_variables = array("<body class='dashed-border-blue '>", "sticky-top", "nav-item", "nav-item", "nav-item active", "nav-item");
     include('../private/shared/header.php');
 ?>
 
 <!-- Page content -->
 <!-- outer jumbotron -->
-<div class="container d-inline-flex flex-column">
+<div class="container flex-column dashed-border">
     <div class="jumbotron about-outer-jumbotron"  id="outer-jumbotron">
         <div class="container">
             <h1 class="text-center" id="main-title">About Mr Grass Master </h1>
@@ -33,7 +33,8 @@
         </div>
     </div>
 </div>
-<nav class="navbar navbar-expand-sm navbar-light bg-light custom_footer>
+
+<nav class="navbar navbar-expand-sm navbar-light bg-light custom_footer dashed-border-orange">
         <span class="navbar-text" id="footer-text">
             &copy; Copyright 2021 KWD. All rights reserved.
         </span>
