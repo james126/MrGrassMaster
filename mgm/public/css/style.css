@@ -189,13 +189,6 @@ carousel */
 .card{
     background: rgba(233, 236, 239, .5);
 }
-body {
-    min-height: 95vh !important;
-    padding: 0;
-    margin:0;
-	border-style:dashed;
-	color:red;
-}
 
 .custom_footer{
     position:absolute;
