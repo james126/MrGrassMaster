@@ -202,3 +202,20 @@ body {
     bottom:0rem;
     width: 100%;
 }
+.dashed-border{
+    border-style: dashed;
+    border-color: red;
+    border-width: 1px;
+}
+
+.dashed-border-blue{
+    border-style: dashed;
+    border-color: blue;
+    border-width: 1px;
+}
+
+.dashed-border-orange{
+    border-style: dashed;
+    border-color: orange;
+    border-width: 1px;
+}
