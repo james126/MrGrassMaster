@@ -1,7 +1,7 @@
 # MrGrassMaster
 
 ---
-<p>Previously hosted using CI/CD using TravisCI and Heroku.</p>  
+<p>Previously hosted with CI/CD using TravisCI and Heroku.</p>  
 <p>Currently working to host with AWS.</p>
 
 ---
