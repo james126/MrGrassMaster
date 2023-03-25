@@ -1,6 +1,9 @@
 # MrGrassMaster
 
-#### N.B. currently not mobile/tablet responsive
+---
+<p>Previously hosted using CI/CD using TravisCI and Heroku.</p>  
+<p>Currently working to host with AWS.</p>
+
 ---
 * <b>index.php</b><br>
 carousel
@@ -33,8 +36,3 @@ displays submitted data
 <img src="https://github.com/james126/Mr-Grass-Master/blob/master/screenshots/s.png" width="60%" height="60%">
 
 ---
-
-Previously hosted online with CI/CD using TravisCI and Heroku.
-Currently working to host online with AWS.
-
-
