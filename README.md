@@ -1,6 +1,5 @@
 # MrGrassMaster
 
-### https://mrgrassmaster.herokuapp.com/index.php <br>
 #### N.B. currently not mobile/tablet responsive
 ---
 * <b>index.php</b><br>
@@ -35,7 +34,7 @@ displays submitted data
 
 ---
 
-* <b>Testing</b><br>
-TravisCI job log example <br>
-<img src="https://github.com/james126/MrGrassMaster/blob/master/screenshots/testlog.JPG" width="60%" height="60%">
+Previously hosted online with CI/CD using TravisCI and Heroku.
+Currently working to host online with AWS.
+
 
