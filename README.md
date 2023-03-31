@@ -1,8 +1,10 @@
 # MrGrassMaster
 
 ---
-<p>Previously hosted with CI/CD using TravisCI and Heroku.</p>  
-<p>Currently working to host with AWS.</p>
+<ul>
+<li>Previously hosted using CI/CD with TravisCI and Heroku.</li>  
+<li>Currently under development to host using AWS</li>
+</ul>
 
 ---
 * <b>index.php</b><br>
